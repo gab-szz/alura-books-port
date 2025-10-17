@@ -1,5 +1,5 @@
 function HeaderOpcoes() {
-  const textoOpcoes = ["CATEGORIAS", "MINHA ESTANTE", "FAVORITOS"];
+  const textoOpcoes = ["Home"];
   return (
     <ul id="header__opcoes" className="flex">
       {textoOpcoes.map((opcao) => (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputPersonalizado from "../Input";
-import { livros, type ILivro } from "./dados";
+import { livros } from "./dados";
+import type { ILivro } from "../../types";
 
 function Pesquisa() {
   const [
@@ -33,10 +34,20 @@ function Pesquisa() {
               );
             }
           );
-
           setLivrosPesquisados(resultadoPesquisa);
         }}
       />
+
+      <div className="flex justify-center gap-20">
+        {livrosPesquisados.map((livro) => (
+          <div className="mt-20 flex flex-col items-center justify-center gap-2.5">
+            <p className="text-xl">
+              {livro.nome}
+            </p>
+            <img src={livro.src} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

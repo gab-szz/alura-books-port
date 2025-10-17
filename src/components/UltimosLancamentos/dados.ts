@@ -4,22 +4,17 @@ import type { ILivro } from "../../types";
 export const livros: ILivro[] = [
   {
     nome: "Liderança em Design",
+    src: livro,
     id: 1,
-    src: livro,
   },
   {
-    nome: "JavaScript Assertivo",
-    id: 2,
+    nome: "Cangaceiro JavaScript",
     src: livro,
-  },
-  {
-    nome: "Cangaceiro em JavaScript",
     id: 3,
-    src: livro,
   },
   {
-    nome: "Aventureiros do Java",
-    id: 4,
+    nome: "Apache Kafka e Spring Boot",
     src: livro,
+    id: 4,
   },
 ];
